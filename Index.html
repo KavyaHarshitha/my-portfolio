@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kavya Harshitha | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="header-content">
+            <h3 class="logo">Kavya Harshitha</h3>
+            <nav>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#education">Education</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="about">
+        <div class="hero-content">
+            <h1>Hi, I'm Kavya Harshitha</h1>
+            <p id="typing-text"></p>
+            <a href="https://drive.google.com/file/d/1BMo5oHGv5LYZGo6qjxkll0KprSpjvJWy/view?usp=drive_link"
+               target="_blank" class="download-btn">Download Resume</a>
+        </div>
+        <div class="about-image">
+            <img src="Kavya.jpg" alt="Kavya Harshitha">
+        </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-card fade-in">
+            <h3>Uber Ride Prediction</h3>
+            <p>Machine learning project predicting weekly ride demand for a ride-hailing service to optimize resources, reduce idle time, and enhance user experience. <strong>Stack:</strong> Python, Flask.</p>
+            <a href="https://github.com/KavyaHarshitha/uber-ride-prediction" target="_blank" class="btn">View Project</a>
+        </div>
+
+        <div class="project-card fade-in">
+            <h3>Web Scraping Sales Analyzer</h3>
+            <p>Full-stack ML project leveraging Selenium for automated data extraction, Azure deployment with RESTful APIs, and easy access via web service URLs. <strong>Stack:</strong> Python, Selenium.</p>
+            <a href="https://github.com/KavyaHarshitha/FSML" target="_blank" class="btn">View Project</a>
+        </div>
+
+        <div class="project-card fade-in">
+            <h3>Weather Alert System</h3>
+            <p>Developed a weather monitoring system using IoT to detect harmful gas levels and implemented a multi-stage alert system. Programmed real-time alerts, including visual (Red Light), auditory (Alarm), SMS notifications, and ventilator fan activation. <strong>Stack:</strong> Temperature Humidity Sensor, Arduino, GSM Module, MQ2 Gas Sensor.</p>
+            <a href="https://github.com/KavyaHarshitha/Weather-Alert-System" target="_blank" class="btn">View Project</a>
+        </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills-container">
+            <div class="skill-card"><i class="devicon-cplusplus-plain colored"></i><span>CPP</span></div>
+            <div class="skill-card"><i class="devicon-python-plain colored"></i><span>Python</span></div>
+            <div class="skill-card"><i class="devicon-html5-plain colored"></i><span>HTML</span></div>
+            <div class="skill-card"><i class="devicon-css3-plain colored"></i><span>CSS</span></div>
+            <div class="skill-card"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+            <div class="skill-card"><i class="devicon-flask-original"></i><span>Flask</span></div>
+            <div class="skill-card"><i class="devicon-azuresqldatabase-plain"></i><span>Machine Learning</span></div>
+            <div class="skill-card"><i class="devicon-selenium-original"></i><span>Selenium</span></div>
+            <div class="skill-card"><i class="devicon-java-plain colored"></i><span>Java</span></div>
+        </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+        <h2>Education</h2>
+        <div class="education-container">
+            <div class="education-card fade-in">
+                <h3>Bachelor of Technology in Information Technology</h3>
+                <p><strong>Shri Vishnu Engineering College For Women</strong> — 2021 - 2025</p>
+                <p>CGPA: 9.04/10</p>
+            </div>
+            <div class="education-card fade-in">
+                <h3>Intermediate (MPC)</h3>
+                <p><strong>Sri Chaitanya Junior College</strong> — 2019 - 2021</p>
+                <p>Percentage: 96%</p>
+            </div>
+            <div class="education-card fade-in">
+                <h3>High School</h3>
+                <p><strong>Geethanjali High School</strong> — 2018 - 2019</p>
+                <p>CGPA: 9.8/10</p>
+            </div>
+        </div>
+    </section>
+
+        <!-- CONTACT -->
+<section id="contact">
+    <h2>Get in Touch</h2>
+    <p style="text-align: center; max-width: 700px; margin: 0 auto 40px;">
+        Have a question or want to work together? Fill out the form below, and I'll get back to you as soon as possible.
+    </p>
+
+    <!-- Contact Form -->
+    <form id="contact-form" action="https://formspree.io/f/YOUR_UNIQUE_ID" method="POST">
+        <div class="form-group">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+        </div>
+        <textarea name="message" placeholder="Your Message" rows="6" required></textarea>
+        <button type="submit" class="form-submit-btn">Send Message</button>
+    </form>
+
+    <div class="contact-alternatives">
+        <p>You can also reach me directly at:</p>
+        <strong>
+            <a href="tel:7013565491">📞 7013565491</a> | <a href="mailto:vennakavya786@gmail.com">📧 vennakavya786@gmail.com</a>
+        </strong>
+    </div>
+</section>
+
+    <!-- BACK TO TOP BUTTON -->
+    <button id="backToTop">↑</button>
+
+    <script src="script.js"></script>
+</body>
+</html>
