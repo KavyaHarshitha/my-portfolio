@@ -1,10 +1,13 @@
+/* FONT IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 /* GENERAL STYLES */
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #07121b;
-    color: #e0e0e0;
+    background-color: #f8f9fa; /* Light grey background */
+    color: #343a40; /* Dark grey text for readability */
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -15,13 +18,13 @@ html {
 
 /* HEADER */
 header {
-    background: rgba(7, 18, 27, 0.8);
+    background: rgba(255, 255, 255, 0.85); /* Semi-transparent white */
     backdrop-filter: blur(10px);
     position: sticky;
     top: 0;
     z-index: 100;
     width: 100%;
-    border-bottom: 1px solid rgba(0, 216, 255, 0.2);
+    border-bottom: 1px solid #dee2e6; /* Subtle border */
 }
 
 .header-content {
@@ -36,24 +39,23 @@ header {
 .logo {
     font-weight: 700;
     font-size: 1.5em;
-    color: #fff;
+    color: #212529; /* Near-black for the logo */
 }
 
 header nav a {
-    color: #e0e0e0;
+    color: #343a40;
     text-decoration: none;
     margin-left: 15px;
     font-weight: 500;
-    padding: 8px 16px; /* Creates the pill shape */
-    border-radius: 8px; /* Rounds the corners of the pill */
+    padding: 8px 16px;
+    border-radius: 8px;
     transition: color 0.3s ease, background-color 0.3s ease;
 }
 
-/* The new style for active/hovered links */
 header nav a:hover,
 header nav a.active {
-    color: #07121b; /* Dark text for contrast */
-    background-color: #00d8ff; /* Highlight background color */
+    color: #ffffff; /* White text on hover */
+    background-color: #0056b3; /* Professional navy blue */
 }
 
 /* HERO SECTION */
@@ -75,18 +77,19 @@ header nav a.active {
     font-size: 3em;
     font-weight: 700;
     margin-bottom: 10px;
+    color: #212529;
 }
 
 .hero-content p {
     font-size: 1.5em;
-    color: #00d8ff;
-    min-height: 1.5em; /* Reserve space for typing text */
+    color: #0056b3; /* Navy blue for typing text */
+    min-height: 1.5em;
 }
 
 .download-btn {
     display: inline-block;
-    background: #00d8ff;
-    color: #111;
+    background: #0056b3; /* Navy blue button */
+    color: #ffffff;
     padding: 12px 25px;
     border-radius: 8px;
     margin-top: 30px;
@@ -96,7 +99,7 @@ header nav a.active {
 }
 
 .download-btn:hover {
-    background: #009fb3;
+    background: #003d82; /* Darker navy on hover */
     transform: translateY(-3px);
 }
 
@@ -105,9 +108,9 @@ header nav a.active {
     width: 280px;
     height: 280px;
     border-radius: 50%;
-    border: 5px solid #00d8ff;
+    border: 5px solid #0056b3; /* Navy blue border */
     object-fit: cover;
-    box-shadow: 0 0 30px rgba(0, 216, 255, 0.5);
+    box-shadow: 0 0 30px rgba(0, 86, 179, 0.3); /* Navy blue shadow */
 }
 
 /* GENERAL SECTION STYLES */
@@ -120,38 +123,39 @@ h2 {
     margin-bottom: 50px;
     font-size: 2.5em;
     font-weight: 600;
-    color: white;
+    color: #212529;
 }
 
 /* PROJECT & EDUCATION CARDS */
 .project-card, .education-card {
-    background: #111;
+    background: #ffffff; /* White cards */
     margin: 20px auto;
     padding: 25px;
     width: 80%;
     max-width: 900px;
     border-radius: 10px;
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid #e9ecef; /* Light border for depth */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05); /* Very subtle shadow */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .project-card:hover, .education-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 30px rgba(0, 216, 255, 0.1);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); /* Slightly larger shadow on hover */
 }
 
 .project-card h3, .education-card h3 {
-    color: #00d8ff;
+    color: #0056b3; /* Navy blue heading */
     margin-top: 0;
 }
 
 .project-card .btn {
     display: inline-block;
     margin-top: 15px;
-    color: #00d8ff;
+    margin-right: 15px;
+    color: #0056b3;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 600; /* Bolder link text */
 }
 
 /* SKILLS */
@@ -165,13 +169,13 @@ h2 {
 }
 
 .skill-card {
-    background: #1a1a1a;
-    color: #e0e0e0;
+    background: #ffffff;
+    color: #495057;
     padding: 20px;
     margin: 10px;
     border-radius: 10px;
     font-weight: 500;
-    border: 1px solid rgba(0, 216, 255, 0.3);
+    border: 1px solid #e9ecef;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
     width: 120px;
@@ -179,15 +183,16 @@ h2 {
 
 .skill-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 216, 255, 0.2);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    color: #0056b3; /* Highlight icon on hover */
 }
 
 .skill-card i {
     font-size: 3em;
     display: block;
     margin-bottom: 10px;
+    transition: color 0.3s;
 }
-
 
 /* CONTACT FORM STYLES */
 #contact-form {
@@ -212,26 +217,26 @@ h2 {
     width: 100%;
     padding: 15px;
     border-radius: 8px;
-    border: 1px solid rgba(0, 216, 255, 0.3);
-    background-color: #1a1a1a;
-    color: #e0e0e0;
+    border: 1px solid #ced4da; /* Standard input border */
+    background-color: #ffffff;
+    color: #495057;
     font-size: 1em;
     font-family: 'Poppins', sans-serif;
-    box-sizing: border-box; /* Important for consistent sizing */
+    box-sizing: border-box;
 }
 
 #contact-form input:focus,
 #contact-form textarea:focus {
     outline: none;
-    border-color: #00d8ff;
-    box-shadow: 0 0 10px rgba(0, 216, 255, 0.3);
+    border-color: #0056b3; /* Navy blue focus border */
+    box-shadow: 0 0 10px rgba(0, 86, 179, 0.1);
 }
 
 .form-submit-btn {
     cursor: pointer;
     border: none;
-    background: #00d8ff;
-    color: #111;
+    background: #0056b3;
+    color: #ffffff;
     padding: 15px;
     font-size: 1.1em;
     font-weight: 600;
@@ -240,7 +245,7 @@ h2 {
 }
 
 .form-submit-btn:hover {
-    background: #009fb3;
+    background: #003d82;
     transform: translateY(-2px);
 }
 
@@ -254,20 +259,19 @@ h2 {
 }
 
 .contact-alternatives a {
-    color: #00d8ff;
+    color: #0056b3;
     text-decoration: none;
     font-weight: 500;
     margin: 0 10px;
 }
-
 
 /* BACK TO TOP BUTTON */
 #backToTop {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background: #00d8ff;
-    color: #111;
+    background: #0056b3;
+    color: #ffffff;
     border: none;
     padding: 10px 15px;
     border-radius: 50%;
@@ -278,7 +282,7 @@ h2 {
 }
 
 #backToTop:hover {
-    background: #009fb3;
+    background: #003d82;
 }
 
 /* FADE-IN EFFECT */
